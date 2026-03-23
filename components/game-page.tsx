@@ -25,7 +25,7 @@ const sampleScenarios = [
     id: 1,
     title: "起晚了",
     description: "起晚了，来不及好好吃饭。",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5565-A9qVyR8AK7evRYQLypYkIk5qnc7Cyx.png",
+    image: "/character-game-sleeping.jpg",
     choices: [
       { text: "当做轻断食，空腹扛着", type: "A" },
       { text: "路边买根热甜玉米边走边啃", type: "B" },
@@ -36,7 +36,7 @@ const sampleScenarios = [
     id: 2,
     title: "救急后的反弹",
     description: "(接上题) 吃完糖 15 分钟后，眩晕感消失了，但胃里依然觉得空荡荡的。",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5616-u2yxeo5KjupTLPJtOcZS46OItjjJZA.png",
+    image: "/character-game-tired.jpg",
     choices: [
       { text: "趁热打铁，再吃一块小蛋糕彻底吃饱", type: "A" },
       { text: "拿出一小袋无糖纯肉肠或一小块奶酪吃下", type: "B" },
@@ -47,7 +47,7 @@ const sampleScenarios = [
     id: 3,
     title: "枯燥的减脂餐",
     description: "减脂期的晚饭，严格还是放一点松？",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5566-lEDp26JhZ1uZptDpasAjJz9TaTG15y.png",
+    image: "/character-game-eating.jpg",
     choices: [
       { text: "水煮鸡胸肉加水煮西兰花，一滴油不放", type: "A" },
       { text: "在鸡胸肉和西兰花上淋一圈橄榄油", type: "B" },

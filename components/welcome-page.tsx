@@ -51,9 +51,9 @@ export function WelcomePage({ onStart }: WelcomePageProps) {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5836-nuBk8xOaFcYAHGQpqAhxl5HY263C4h.png"
+              src="/character-welcome.jpg"
               alt="可爱的小女孩"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
             />
           </motion.div>
 

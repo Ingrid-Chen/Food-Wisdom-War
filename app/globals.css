@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  /* Paper & Background */
+  --background: 48 33% 97%;
+  --foreground: 222 47% 11%;
+  
+  /* Card & Surface */
+  --card: 45 60% 96%;
+  --card-foreground: 222 47% 11%;
+  
+  /* Primary - Warm Orange */
+  --primary: 35 91% 55%;
+  --primary-foreground: 0 0% 100%;
+  
+  /* Secondary - Soft Green */
+  --secondary: 142 43% 54%;
+  --secondary-foreground: 0 0% 100%;
+  
+  /* Accent - Playful Yellow */
+  --accent: 45 93% 60%;
+  --accent-foreground: 222 47% 11%;
+  
+  /* Status Colors */
+  --blood-sugar: 0 72% 63%;
+  --mood: 45 93% 60%;
+  --energy: 142 71% 45%;
+  --fullness: 24 95% 53%;
+  
+  /* Border & Shadow */
+  --border: 222 47% 11%;
+  --ring: 35 91% 55%;
+  
+  /* Muted */
+  --muted: 45 30% 90%;
+  --muted-foreground: 222 20% 40%;
+  
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  
+  --color-blood-sugar: hsl(var(--blood-sugar));
+  --color-mood: hsl(var(--mood));
+  --color-energy: hsl(var(--energy));
+  --color-fullness: hsl(var(--fullness));
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius));
+  --radius-lg: calc(var(--radius) + 4px);
+  --radius-xl: calc(var(--radius) + 8px);
+  
+  --font-sans: var(--font-quicksand), system-ui, sans-serif;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+}
+
+/* Paper texture overlay */
+.paper-texture {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Doodle button press effect */
+.doodle-btn {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.doodle-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px 0px rgba(30, 41, 59, 1) !important;
+}
+
+/* Hand-drawn border effect */
+.hand-drawn {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Capsule progress bar */
+.progress-capsule {
+  border-radius: 9999px;
+}
